@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BuyViewController" customModule="ComprasUSA" customModuleProvider="target">
+            <connections>
+                <outlet property="lblReal" destination="vls-At-gGA" id="YaF-uZ-m9v"/>
+                <outlet property="lblRealDescription" destination="CQz-S7-TAl" id="iAA-pY-3wh"/>
+                <outlet property="txtDolar" destination="xxY-xD-mx3" id="1m4-B9-e9p"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="usa" translatesAutoresizingMaskIntoConstraints="NO" id="GjR-3E-nFz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
+                    <variation key="heightClass=regular-widthClass=regular" image="vegas"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entre com seus gastos nos USA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mU-KZ-hJq">
+                    <rect key="frame" x="40" y="61.5" width="244" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7Y-hU-1CM">
+                    <rect key="frame" x="40" y="92" width="66.5" height="38.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" priority="100" constant="70" id="QAz-d2-HcA">
+                            <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                        </constraint>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
+                    </variation>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brasil" translatesAutoresizingMaskIntoConstraints="NO" id="5Id-Fv-vAF">
+                    <rect key="frame" x="0.0" y="228.5" width="375" height="222"/>
+                    <variation key="heightClass=regular-widthClass=regular" image="saopaulo"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor sem impostos (Dolar R$3,50)" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQz-S7-TAl">
+                    <rect key="frame" x="40" y="289.5" width="267.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 0,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vls-At-gGA">
+                    <rect key="frame" x="40" y="320.5" width="295" height="38.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
+                    </variation>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xxY-xD-mx3">
+                    <rect key="frame" x="128.5" y="89.5" width="206.5" height="43"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
+                    </variation>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5Id-Fv-vAF" secondAttribute="trailing" id="8aX-0B-YR1"/>
+                <constraint firstItem="GjR-3E-nFz" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="9uA-a2-2Ve"/>
+                <constraint firstItem="vls-At-gGA" firstAttribute="top" secondItem="CQz-S7-TAl" secondAttribute="bottom" constant="10" id="AxU-xC-7h9">
+                    <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                </constraint>
+                <constraint firstItem="h7Y-hU-1CM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="CDr-pO-Cfw"/>
+                <constraint firstItem="1mU-KZ-hJq" firstAttribute="leading" secondItem="h7Y-hU-1CM" secondAttribute="leading" id="EoG-a9-pc0"/>
+                <constraint firstItem="GjR-3E-nFz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Flj-jq-T1V"/>
+                <constraint firstItem="5Id-Fv-vAF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="J6d-i5-YzS"/>
+                <constraint firstItem="vls-At-gGA" firstAttribute="leading" secondItem="5Id-Fv-vAF" secondAttribute="leading" constant="40" id="JkP-uL-S0j"/>
+                <constraint firstItem="5Id-Fv-vAF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="OlG-Bb-y0k"/>
+                <constraint firstItem="h7Y-hU-1CM" firstAttribute="centerY" secondItem="xxY-xD-mx3" secondAttribute="centerY" id="PBh-jv-RtT"/>
+                <constraint firstItem="GjR-3E-nFz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SjK-PB-t10"/>
+                <constraint firstItem="5Id-Fv-vAF" firstAttribute="height" secondItem="GjR-3E-nFz" secondAttribute="height" id="UnQ-tp-eTJ"/>
+                <constraint firstItem="GjR-3E-nFz" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="1:2" id="YwW-63-cdq"/>
+                <constraint firstItem="vls-At-gGA" firstAttribute="centerY" secondItem="5Id-Fv-vAF" secondAttribute="centerY" id="d5c-Nk-z8S"/>
+                <constraint firstItem="CQz-S7-TAl" firstAttribute="leading" secondItem="vls-At-gGA" secondAttribute="leading" id="dbY-pi-CG2"/>
+                <constraint firstItem="GjR-3E-nFz" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:3" id="eeM-bS-zvk"/>
+                <constraint firstItem="xxY-xD-mx3" firstAttribute="leading" secondItem="h7Y-hU-1CM" secondAttribute="trailing" constant="22" id="lgZ-rP-jur"/>
+                <constraint firstItem="h7Y-hU-1CM" firstAttribute="top" secondItem="1mU-KZ-hJq" secondAttribute="bottom" constant="10" id="oQR-47-UOf">
+                    <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                </constraint>
+                <constraint firstItem="vls-At-gGA" firstAttribute="trailing" secondItem="5Id-Fv-vAF" secondAttribute="trailing" constant="-40" id="pYn-fA-kk7"/>
+                <constraint firstItem="5Id-Fv-vAF" firstAttribute="width" secondItem="GjR-3E-nFz" secondAttribute="width" id="pkb-3l-MLu"/>
+                <constraint firstItem="xxY-xD-mx3" firstAttribute="trailing" secondItem="GjR-3E-nFz" secondAttribute="trailing" constant="-40" id="vD6-aW-39X"/>
+                <constraint firstItem="5Id-Fv-vAF" firstAttribute="top" secondItem="GjR-3E-nFz" secondAttribute="bottom" constant="6" id="y8K-Ue-LVe"/>
+                <constraint firstItem="xxY-xD-mx3" firstAttribute="centerY" secondItem="GjR-3E-nFz" secondAttribute="centerY" id="zpu-1B-D5K"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="YwW-63-cdq"/>
+                    <exclude reference="8aX-0B-YR1"/>
+                    <exclude reference="OlG-Bb-y0k"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact">
+                <mask key="constraints">
+                    <exclude reference="9uA-a2-2Ve"/>
+                    <include reference="YwW-63-cdq"/>
+                    <include reference="8aX-0B-YR1"/>
+                    <exclude reference="J6d-i5-YzS"/>
+                    <include reference="OlG-Bb-y0k"/>
+                    <exclude reference="y8K-Ue-LVe"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="-681" y="-182"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="brasil" width="937" height="376"/>
+        <image name="saopaulo" width="1920" height="1200"/>
+        <image name="usa" width="700" height="295"/>
+        <image name="vegas" width="3840" height="2391"/>
+    </resources>
+</document>

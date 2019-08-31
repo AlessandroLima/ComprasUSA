@@ -1,0 +1,3 @@
+protocol MainRouterProtocol {
+    func inicialView()
+}
